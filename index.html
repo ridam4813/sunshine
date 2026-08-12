@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine Facility Management Services - Professional Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-sun"></i>
+                    <span>Sunshine Facility Management</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Professional Facility Management Services</h1>
+                <p>Excellence in every detail. Your trusted partner for facility solutions.</p>
+                <button class="cta-button" onclick="scrollToSection('booking')">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-broom"></i>
+                    <h3>Cleaning & Maintenance</h3>
+                    <p>Professional cleaning services for offices, commercial spaces, and residential properties.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Repairs & Maintenance</h3>
+                    <p>Expert maintenance and repair services for all facility requirements.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Landscaping</h3>
+                    <p>Beautiful outdoor space management and landscaping solutions.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Security Services</h3>
+                    <p>24/7 professional security and surveillance solutions.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-fan"></i>
+                    <h3>HVAC Services</h3>
+                    <p>Heating, ventilation, and air conditioning system management.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Electrical Services</h3>
+                    <p>Complete electrical system maintenance and repair services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Book Our Services</h2>
+            <div class="booking-container">
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Select Service *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Choose a service...</option>
+                            <option value="cleaning">Cleaning & Maintenance</option>
+                            <option value="repairs">Repairs & Maintenance</option>
+                            <option value="landscaping">Landscaping</option>
+                            <option value="security">Security Services</option>
+                            <option value="hvac">HVAC Services</option>
+                            <option value="electrical">Electrical Services</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred Date *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Preferred Time *</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Service Location *</label>
+                        <input type="text" id="address" name="address" placeholder="Enter full address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Details</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us more about your requirements..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Book Appointment</button>
+                </form>
+
+                <div class="booking-info">
+                    <h3>Why Choose Us?</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Professional & Certified Staff</li>
+                        <li><i class="fas fa-check"></i> 24/7 Customer Support</li>
+                        <li><i class="fas fa-check"></i> Affordable Pricing</li>
+                        <li><i class="fas fa-check"></i> Quick Response Time</li>
+                        <li><i class="fas fa-check"></i> Satisfaction Guaranteed</li>
+                        <li><i class="fas fa-check"></i> Fully Insured & Licensed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Sunshine Facility Management</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>With over 15 years of experience in facility management, Sunshine Facility Management Services has been the trusted choice for businesses and homeowners across the region.</p>
+                    <p>We pride ourselves on delivering exceptional service quality, professional staff, and innovative solutions tailored to meet every client's unique needs.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Support Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@sunshinefm.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>123 Business Street, Suite 100, City, State 12345</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Hours</h3>
+                        <p>Mon-Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM<br>Sun: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sunshine Facility Management</h4>
+                    <p>Your trusted partner for professional facility management services.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#booking">Booking</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sunshine Facility Management Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Message Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <i class="fas fa-check-circle"></i>
+                <h2>Booking Confirmed!</h2>
+                <p>Your appointment has been successfully booked.</p>
+                <p>We will contact you shortly to confirm the details.</p>
+                <button onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
